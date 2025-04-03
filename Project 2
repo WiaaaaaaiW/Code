@@ -89,7 +89,7 @@ if Total_Votes_B > Total_Votes_R:
 else:
     print('Road Runner wins the election!')
 
-# Task 7 – State Summary
+# Task 7 – Summary the votes from each state (William Sun)
 def state_summary(state_id):
     if state_id in State_Summary:
         summary = State_Summary[state_id]
@@ -101,7 +101,7 @@ def state_summary(state_id):
     else:
         print("Invalid state ID")
 
-# Task 8 – Summary Table
+# Task 8 – Create a summary table for shown (William Sun)
 print("\n{:<8} {:>12} {:>12} {:>10} {:>10}".format("State", "BB Votes", "RR Votes", "Winner", "EVotes"))
 for state in sorted(State_Summary.keys()):
     summary = State_Summary[state]
@@ -109,7 +109,7 @@ for state in sorted(State_Summary.keys()):
         state, summary['BB'], summary['RR'], summary['winner'], summary['EVotes']
     ))
 
-# Task 9 – Time-based report
+# Task 9 – Create a Time-based report (William Sun)
 # Assume data contains timestamps in column 15 (index 15) if available
 def datetime_summary(user_time_str):
     try:
